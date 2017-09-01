@@ -10,9 +10,9 @@ body {
   /*grid-template-rows: 5% 60% 10% 20% 5%;*/
   grid-template-rows: 60px 960px 160px 320px 60px; /*1560px total*/
   /*grid-template-columns: 33% 33% 33%;*/
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  /*grid-template: 5% 60% 10% 20% 5% / 33% 33% 33%*/
-  grid-column-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*can use repeat(3, 1fr)*/
+  /*grid-template: 5% 60% 10% 20% 5% / 1fr 1fr 1fr */
+  grid-column-gap: 20px; /*possibly change to gap?*/
 }
 
 .dog{
@@ -25,7 +25,8 @@ body {
 .a {
   background-color: #ffffff;
   color: #dc6363;
-  grid-column: 1 / 7;
+  /*grid-column: 1 / 7;*/
+  grid-column: 1 / -1; /*so will always be to the last column*/
   padding-top: 10px;
 }
 
@@ -40,13 +41,15 @@ body {
   letter-spacing: 3.7px;
   /*text-align: left;*/
   color: #ffffff;
-  grid-column: 1 / span 6;
+  /*grid-column: 1 / span 6; have this switch be a step?*/
+  grid-column: 1 / -1;
 }
 
 
 .c {
   background-color: #f0f0f0;
-  grid-column: 1 / span 6;
+  /*grid-column: 1 / span 6;*/
+  grid-column: 1 / -1;
 }
 
 .welcome {
@@ -87,6 +90,7 @@ body {
 
 .e{
   grid-column: 3 / span 2;
+  /*the starting p would need to change in mobile*/
 }
 
 .f{
