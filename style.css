@@ -15,14 +15,7 @@ body {
   grid-column-gap: 20px; /*possibly change to gap?*/
 }
 
-.dog{
-  width: 657px;
-  height: 599px;
-  padding-left: 150px;
-  object-fit: contain;
-}
-
-.a {
+header {
   background-color: #ffffff;
   color: #dc6363;
   /*grid-column: 1 / 7;*/
@@ -30,7 +23,7 @@ body {
   padding-top: 10px;
 }
 
-.b {
+.banner {
   background-color: #dc6363;
   color: #ffffff;
   /*width: 1086px;
@@ -45,14 +38,19 @@ body {
   grid-column: 1 / -1;
 }
 
+.dog{
+  width: 657px;
+  height: 599px;
+  padding-left: 150px;
+}
 
-.c {
+.about {
   background-color: #f0f0f0;
   /*grid-column: 1 / span 6;*/
   grid-column: 1 / -1;
 }
 
-.welcome {
+.text {
   width: 50%;
   margin:auto;
   padding: auto;
@@ -63,11 +61,6 @@ body {
   text-align: left;
   letter-spacing: 0.5px;
   padding-top: 30px;
-}
-
-.info {
-  background-color: #ffffff;
-  color: #ffffff;
 }
 
 .box {
@@ -84,30 +77,27 @@ body {
     grid-column: 1 / span 2;
 }
 
-.d {
+.address {
   grid-column: 1 / span 2;
 }
 
-.e{
+.hours{
   grid-column: 3 / span 2;
-  /*the starting p would need to change in mobile*/
 }
 
-.f{
+.phone{
   grid-column: 5 / span 2;
 }
 
 
-.g {
+footer {
   background-color: #dc6363;
   color: #ffffff;
-  /*width: 112px;
-  height: 23px;*/
   font-family: Poppins;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.4px;
-  /*text-align: left;*/
-  grid-column: 1 / span 6;
   padding-top: 20px;
+
+  grid-column: 1 / span 6;
 }
