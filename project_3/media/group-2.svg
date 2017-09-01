@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="29" viewBox="0 0 154 29">
+    <g fill="none" fill-rule="evenodd" font-family="PlayfairDisplay-Bold, Playfair Display" font-size="38" font-weight="bold" letter-spacing=".308">
+        <text transform="translate(-7 -13)">
+            <tspan x="0" y="41" fill="#F4F4F4"> </tspan> <tspan x="36.708" y="41" fill="#000">NGLES </tspan>
+        </text>
+        <text fill="#000" transform="rotate(180 14.658 23)">
+            <tspan x="3" y="45">V</tspan>
+        </text>
+    </g>
+</svg>
