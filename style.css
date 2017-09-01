@@ -2,15 +2,14 @@ body {
   background-color: #ffffff;
   color: #dc6363;
   text-align: center;
-  /*padding: 5px;*/
 }
 
 .grid {
   display: grid;
   /*grid-template-rows: 5% 60% 10% 20% 5%;*/
   grid-template-rows: 60px 960px 160px 320px 60px; /*1560px total*/
-  /*grid-template-columns: 33% 33% 33%;*/
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /*can use repeat(3, 1fr)*/
+  /*grid-template-columns: 1fr 1fr 1fr; /*can use repeat(3, 1fr)*/
+  grid-template-columns: repeat(3, 1fr);
   /*grid-template: 5% 60% 10% 20% 5% / 1fr 1fr 1fr */
   grid-column-gap: 20px; /*possibly change to gap?*/
 }
@@ -18,23 +17,21 @@ body {
 header {
   background-color: #ffffff;
   color: #dc6363;
-  /*grid-column: 1 / 7;*/
-  grid-column: 1 / -1; /*so will always be to the last column*/
   padding-top: 10px;
+  /*grid-column: 1 / 7 or 1 / span 6; have this switch be a step?*/
+  grid-column: 1 / -1; /*so will always be to the last column*/
+
 }
 
 .banner {
   background-color: #dc6363;
   color: #ffffff;
-  /*width: 1086px;
-  height: 138px;*/
   font-family: Poppins;
   font-size: 84px;
   font-weight: 300;
   letter-spacing: 3.7px;
-  /*text-align: left;*/
   color: #ffffff;
-  /*grid-column: 1 / span 6; have this switch be a step?*/
+
   grid-column: 1 / -1;
 }
 
@@ -46,7 +43,7 @@ header {
 
 .about {
   background-color: #f0f0f0;
-  /*grid-column: 1 / span 6;*/
+
   grid-column: 1 / -1;
 }
 
@@ -73,20 +70,20 @@ header {
     text-align: center;
     padding-top: 2em;
     padding-bottom: 2em;
+
     grid-row: 4 / span 1;
-    grid-column: 1 / span 2;
 }
 
 .address {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 1;
 }
 
 .hours{
-  grid-column: 3 / span 2;
+  grid-column: 2 / span 1;
 }
 
 .phone{
-  grid-column: 5 / span 2;
+  grid-column: 3 / span 1;
 }
 
 
@@ -99,5 +96,5 @@ footer {
   letter-spacing: 0.4px;
   padding-top: 20px;
 
-  grid-column: 1 / span 6;
+  grid-column: 1 / -1;
 }
